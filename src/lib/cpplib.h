@@ -5,60 +5,17 @@
 #include <string>
 #include <vector>
 
-using namespace std;
-/**
- *  Example class used for GTest demo
- */
-struct TreeNode {
-      int val;
-      TreeNode *left;
-      TreeNode *right;
-      TreeNode() : val(0), left(nullptr), right(nullptr) {}
-      TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-      TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-};
-
 class CPPLib {
  public:
-  //q1
-  vector<int> keepOdd(const vector<int>& input);
-  vector<int> transform(const vector<int>& input);
-  int sum(const vector<int>& input);
-
-
   //q2
-  int NumberOfNodes(TreeNode* root);
-  int SumOfNodes(TreeNode* root);
-  int DepthOfTree(TreeNode* root);
-  int DiameterOfTree(TreeNode* root);
+  int findKthSmallest(const std::vector<std::vector<int> > &input, int k);
 
-  //q4
-  bool isBST(TreeNode* root);
-  //optional
-  int findLCA(TreeNode* root, int val_a, int val_b);
+  //q3
+  std::vector<std::vector<int> > kClosest(std::vector<std::vector<int> >& points, int k);
 
-  private : 
 };
 
-// q3
-class BST
-{
-private:
-      TreeNode *root_;
-public:
-      BST();
-
-      // Insert elements of initial_values
-      // one by one into the Tree
-      BST(std::vector<int> initial_values);
-      ~BST();
-
-      void push(int key); // **GT** Inserts a key inside Tree
-      bool find(int key); // **GT** Returns true if the key is in the Tree.
-      bool erase(int key); // **GT** Removes the key from the tree. If not successful, returns false.
-};
-
-// q5
+// q1
 class MaxHeap {
  public:
   MaxHeap(); // default constructor
@@ -78,7 +35,7 @@ class MaxHeap {
   void TrickleUp(int i);
   void TrickleDown(int i);
 
-  vector<int> data_;
+  std::vector<int> data_;
 };
 
 #endif

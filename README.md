@@ -1,5 +1,5 @@
 
-# HW4 EE599 - Computing Principles for Electrical Engineers
+# HW4 EE538 - Computing Principles for Electrical Engineers
 
 - Please clone the repository, edit [README.md](README.md) to answer the questions, and fill up functions to finish the HW.
 - For non-coding questions, you will find **Answer** below each question. Please write your answer there.
@@ -57,7 +57,7 @@ output: 1
 input: [ [0, 2], [1, 2, 5], [6, 2, 2, 3, 15] ] and k = 7\
 output: 3
 
-Write several tests using GTest for your function in [tests/q2student_test.cc](tests/q2_student_test.cc).
+Write several tests using GTest for your function in [tests/q2_student_test.cc](tests/q2_student_test.cc).
 
 Please create your test cases and run the following command to verify the functionality of your program.
 ```
@@ -82,7 +82,7 @@ Example 2:\
 Input: points = [[3,3],[5,-1],[-2,4]], k = 2\
 Output: [[3,3],[-2,4]]
 
-Write several tests using GTest for your function in tests/q3_student_test.cc.
+Write several tests using GTest for your function in [tests/q3_student_test.cc](tests/q3_student_test.cc).
 
 Please create your test cases and run the following command to verify the functionality of your program.
 
